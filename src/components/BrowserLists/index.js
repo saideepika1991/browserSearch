@@ -2,10 +2,10 @@ import './index.css'
 
 const BrowserLists = props => {
   const {browserDetails, deleteTodo} = props
-  const {timeAccessed, logoUrl, title, domainUrl} = browserDetails
+  const {id, timeAccessed, logoUrl, title, domainUrl} = browserDetails
 
   const onDeleteButtonPress = () => {
-    deleteTodo(title)
+    deleteTodo(id)
   }
 
   return (
